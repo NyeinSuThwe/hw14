@@ -114,4 +114,18 @@ body {
   border-radius: 10px;
   padding: 8px;
 }
-
+.autofit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 10px;
+  background: #f6fbff;
+  border-radius: 12px;
+  outline: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.fit {
+  min-height: 120px;
+  background: linear-gradient(180deg, #e9f2ff, #f1f5ff);
+  border: 1px solid #d9e3ff;
+  border-radius: 10px;
+}
