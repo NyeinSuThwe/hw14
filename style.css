@@ -35,7 +35,6 @@ body {
   outline: 1px dashed rgba(0, 0, 0, 0.12);
 }
 
-/* Positioning via line numbers */
 .one {
   grid-area: 1 / 1 / 5 / 3;
   background: #ffdcdc;
@@ -81,10 +80,8 @@ body {
   background: #fafafa;
 }
 
-/* Remove height if existed */
 .grid { height: auto; }
 
-/* Pokémon grid-area assignments */
 .mudkip {
   grid-area: mudkip;
   justify-self: end;
