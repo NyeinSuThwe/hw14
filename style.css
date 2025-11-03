@@ -12,8 +12,6 @@ body {
   background: #f8f9fb;
   color: #1e1e1e;
 }
-
-/* Container frame for visual clarity */
 .container {
   margin: 24px auto;
   padding: 12px;
@@ -21,10 +19,54 @@ body {
   background: #fff;
   max-width: 960px;
 }
-
 .grid {
   display: grid;
-  .overlap-grid {
+  grid-template-areas:
+    "mudkip mudkip"
+    "piplup piplup"
+    "chimchar cyndaquil"
+    "torchic torchic";
+  grid-template-columns: 200px 300px;
+  grid-template-rows: 150px 200px 300px 200px;
+  justify-items: center;
+  width: 600px;
+  justify-content: end;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-rows: 150px;
+  gap: 10px;
+  padding: 10px;
+  background: #fafafa;
+}
+.grid { height: auto; }
+.mudkip {
+  grid-area: mudkip;
+  justify-self: end;
+}
+.piplup {
+  grid-area: piplup;
+}
+.chimchar {
+  grid-area: chimchar;
+}
+.cyndaquil {
+  grid-area: cyndaquil;
+}
+.torchic {
+  grid-area: torchic;
+}
+.item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.grid .item {
+  background: #eef3ff;
+  border: 1px solid #d9e3ff;
+  border-radius: 10px;
+  padding: 8px;
+}
+.overlap-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 120px);
@@ -34,7 +76,6 @@ body {
   border-radius: 12px;
   outline: 1px dashed rgba(0, 0, 0, 0.12);
 }
-
 .one {
   grid-area: 1 / 1 / 5 / 3;
   background: #ffdcdc;
@@ -54,62 +95,6 @@ body {
 }
 .overlap-grid .item {
   border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-
-  grid-template-areas:
-    "mudkip mudkip"
-    "piplup piplup"
-    "chimchar cyndaquil"
-    "torchic torchic";
-
-  grid-template-columns: 200px 300px;
-  grid-template-rows: 150px 200px 300px 200px;
-
-  justify-items: center;
-  width: 600px;
-  justify-content: end;
-  align-items: stretch;
-  align-content: center;
-
-  /* per homework requirement */
-  grid-auto-rows: 150px;
-
-  gap: 10px;
-  padding: 10px;
-  background: #fafafa;
-}
-
-.grid { height: auto; }
-
-.mudkip {
-  grid-area: mudkip;
-  justify-self: end;
-}
-.piplup {
-  grid-area: piplup;
-}
-.chimchar {
-  grid-area: chimchar;
-}
-.cyndaquil {
-  grid-area: cyndaquil;
-}
-.torchic {
-  grid-area: torchic;
-}
-
-/* item visuals */
-.item img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.grid .item {
-  background: #eef3ff;
-  border: 1px solid #d9e3ff;
-  border-radius: 10px;
-  padding: 8px;
 }
 .autofit-grid {
   display: grid;
