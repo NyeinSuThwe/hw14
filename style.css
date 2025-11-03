@@ -129,3 +129,15 @@ body {
   border: 1px solid #d9e3ff;
   border-radius: 10px;
 }
+section {
+  padding: 8px 12px;
+}
+.template-area {
+  padding-top: 16px;
+}
+.overlap {
+  padding-top: 8px;
+}
+.autofit {
+  padding-top: 8px;
+}
